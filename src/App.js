@@ -1,15 +1,19 @@
 import { useDispatch } from "react-redux";
-import Count from "./components/Count";
+import Cart from "./components/Cart";
+import Product from "./components/Product";
+import products from "./products.json"
+
 
 const App = () => {
   const dispatch = useDispatch();
 
 
   return (
-    <div>
-      <button onClick={(e) => dispatch({ type: "INCREMENT" })}>Increase</button>
-      <Count />
-      <button onClick={(e) => dispatch({ type: "DECREMENT" })}>Decrease</button>
+    <div className="App">
+      <Cart />
+      <div className="products">
+        {products.map((product) => (<Product key={product.id} {...product}/>))}
+      </div>
     </div>
   );
 }
