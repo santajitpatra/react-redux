@@ -7,7 +7,7 @@ const Cart = () => {
   const total = item.reduce((a, b) => a + b.price, 0);
 
   return (
-    <div>
+    <div className="cart">
       <h3>
         Total Item: {item.length} (Rs. {total})
       </h3>

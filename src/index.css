@@ -8,6 +8,15 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+.cart {
+    background-color: rgb(112, 50, 255);
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    margin: auto;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
